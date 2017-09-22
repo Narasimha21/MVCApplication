@@ -1,9 +1,12 @@
 package com.narasimha.mvc.service;
 
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import com.narasimha.mvc.model.PassengerProfile;
-
+@Service
+@Component
 public class PassengerService implements IPassengerService {
 	RestTemplate restTemplate = new RestTemplate();
 	String Uri = "http://localhost:8123/RESTApplication/passenger";
